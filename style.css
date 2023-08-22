@@ -1,0 +1,141 @@
+ body {
+   background-color: rgba(53, 43, 43, 0.911);
+   overflow: hidden;
+   background: #3bdceb;
+ }
+ body>img{
+  display: none;
+ }
+
+
+ #chat-window {
+   width: 30%;
+   height: 90%;
+   margin: 0 auto;
+   background-color: rgb(46, 104, 141);
+   padding: 20px;
+   border-radius: 10px;
+   margin-top: 0px;
+   scroll-behavior: smooth;
+   hyphens: auto;
+   height: calc(105vh - 130px);
+   max-height: calc(150vh - 300px);
+   overflow: auto;
+   position: absolute;
+   right: 10px;
+   bottom: 50px;
+ }
+.userText>i{
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 22px;
+  color: white;
+  background-color: #000;
+}
+.botText>i{
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 22px;
+  color: white;
+  background-color: #913d3d;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+.gif{
+  /* border-radius: 50%; */
+  width: 50%;
+  height: 50%;
+  object-position: center;
+}
+ .chat-window::-webkit-scrollbar {
+   display: none !important;
+ }
+#chatbox::-webkit-scrollbar {
+  display: none !important;
+}
+.container::-webkit-scrollbar{
+  display: none !important;
+}
+ #chatbox {
+   padding: 10px;
+   margin-bottom: 10px;
+   overflow: auto;
+   overflow-y: auto;
+  }
+
+ .botText {
+   color: white;
+   font-family: Helvetica;
+   font-size: 16px;
+   font-weight: normal;
+   text-align: right;
+   clear: both;
+ }
+
+ .botText span {
+   line-height: 1.5em;
+   display: inline-block;
+   background: #5ca6fa;
+   padding: 10px;
+   border-radius: 8px;
+   border-bottom-right-radius: 2px;
+   max-width: 80%;
+   margin-right: 10px;
+   animation: floatup .5s forwards
+ }
+ .input-group{
+  position: absolute !important;
+  right: 0;
+  bottom: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-right: 10px !important;
+  width: 35% !important;
+ }
+ #send-button{
+  margin-right: 0px !important;
+ }
+#video{
+  left: 0;
+  top: 5%;
+  position: absolute;
+}
+ .userText {
+   color: #000;
+   font-family: Helvetica;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: left;
+ }
+
+ .userText span {
+   line-height: 1.5em;
+   display: inline-block;
+   background: #3bdceb;
+   padding: 10px;
+   border-radius: 8px;
+   border-bottom-left-radius: 2px;
+   max-width: 80%;
+   margin-left: 10px;
+   animation: floatup .5s forwards
+ }
+
+ @media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+   #chat-window {
+     width: 90%;
+   }
+ }
+
+ @keyframes amp {
+   0% {
+     height: 40px;
+   }
+
+   50% {
+     height: 80px;
+   }
+
+   100% {
+     height: 40px;
+   }
+ }
